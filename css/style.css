@@ -1,0 +1,203 @@
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 
+Style Rules for header
+*/
+
+header {
+    min-height: 10vh;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    background-color: #169ac7;
+    text-shadow: 2px 2px 8px white;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    background-color: #0f7394;
+    overflow: auto;
+}
+/* 
+Style Rules for nav #0f7394 use this color for other stuff
+*/
+
+nav {
+    min-height: 5vh;
+    height: 100%;
+    color: white;
+    background-color: #126986;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    overflow: auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+nav li {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#navicon {
+    width: 10%;
+    height: 10%;
+}
+
+#navicon:hover ~ ul, nav ul:hover {
+
+    display: block;    
+}
+
+@media (min-width: 1000px) {
+    #navicon {
+        display: none;
+    }
+    nav ul {
+        display: block;
+    }
+    nav li:hover {
+        background-color: #1692bb;
+    }
+    nav li {
+        float: left;
+        width: 25%;
+    }
+    .link {
+        color: white;
+    }
+}
+/*
+Style Rules for main
+*/
+
+main {
+    min-height: 85vh;
+    background: linear-gradient( #39ccfa,#2fbfed, #2081a1 , #10404f);
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;      
+}
+figure:nth-of-type(odd) {
+    background: #2fbfed;
+  }
+h1 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+p {
+    color: white;
+    font-size: 1.4em;
+    text-align: center;
+}
+.figureimage {
+    max-width: 350px;
+}
+figure {
+    max-width: 350px;
+    min-height: 270px;
+    max-height: 270px;
+    background-color: #10404f;
+    padding: 2%;
+    float: left;
+}
+
+section {
+    height: 40vh;
+    color:white;
+    box-shadow: 5px 5px 12px white
+}
+
+#bigimage {
+    height: 100%;
+    width: 100%;
+}
+
+article {
+    height: 40vh;
+    color: white;
+    font-size: 1.2em;
+    background-color: #0f7394;
+    background-color: rgba(15, 115, 148, 0.2);
+}
+#article1 {
+    font-size: 1.8em;
+    overflow: auto;
+}
+#Nano {
+    max-width: 100%;
+    height: 100%;
+}
+
+main li {
+    font-size: 1.5em;
+}
+@media (max-width: 899px) {
+    figure{
+        margin-left: 1.5%;
+    }
+    
+}
+
+@media (min-width: 900px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    section {
+        margin-top: 10px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #figures {
+        height: 100vh;
+    }
+    #policeimg {
+        height: 250px;
+        width: 400px;
+    }
+    #Nano {
+        max-width: 100%;
+        height: 100%;
+        margin-left: 4.5em;
+    }
+    .figureimage {
+        max-width: 400px;
+        max-height: 300px;
+    }
+    figure {
+        max-width: 400px;
+        background-color: #10404f;
+        padding: 2%;
+        margin-top: 1%;
+        margin-left: 2%;
+        float: left;
+    }
+    article {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 2em;
+    }
+    #article1 {
+        font-size: 2em;
+    }
+    main li {
+        list-style-type: none;
+        padding-top: 10px;
+        font-size: 1.5em;
+    }
+   
+}
